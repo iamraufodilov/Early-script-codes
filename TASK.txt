@@ -1,0 +1,8 @@
+# The task of this code to make some codes in order to give ability to processor human orders and independent orders
+# I can briefly explain overall what kind of actions and functions included
+
+
+1) processor takes input from outside
+2) Makes the output with the help of its own knowledge and internet
+3) gives output to input recource
+4) and have ability its own independence  
