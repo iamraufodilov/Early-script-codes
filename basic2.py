@@ -38,7 +38,7 @@ def audio_input():
             phrase = audio_recognizer.recognize_google(audio, language='en-us')
             print("You said: ", phrase)
 
-        except Expectation as exp:
+        except Exception as exp:
             print(exp)
             print("Can you repeat that?")
             return None
@@ -71,7 +71,8 @@ def core_code():
     greeting()
 
     while(True):
-        phrase = audio_input().lover()
+        phrase = audio_input()
+        str(phrase).lower()
         if "open medium" in phrase:
             assistant("Opening medium.com")
             webbrowser.open("www.medium.com")
